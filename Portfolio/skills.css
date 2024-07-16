@@ -1,0 +1,23 @@
+.popoutButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .popoutSpan {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .popoutSpan.active {
+    opacity: 1;
+  }
