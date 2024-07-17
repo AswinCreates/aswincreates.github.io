@@ -287,7 +287,7 @@ body {
 
 .section {
     padding: 20px;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -399,6 +399,7 @@ footer button:hover {
 }
 
 
+
 .line {
     width: 5px; 
     height: 90px;
@@ -407,3 +408,22 @@ footer button:hover {
     border-color: white;
     border-radius: 1px;
 }
+
+@media (max-width: 600px) {
+    .gradient-insta {
+        padding: 10px 15px;
+    }
+
+    .gradient-discord {
+        padding: 10px 15px;
+    }
+
+    .gradient-github {
+        padding: 10px 15px;
+    }
+
+    .gradient-x {
+        padding: 10px 15px;
+    }
+}    
+
