@@ -283,15 +283,4 @@ footer button:hover {
     border-radius: 1px;
 }
 
-@media (max-width: 1500px) {
-    .gradient-insta, .gradient-discord, .gradient-github, .gradient-x, .section, .section-social {
-        padding: 10px 15px;
-    }
-}
-
-@media (max-height: fitcon) {
-    .gradient-insta, .gradient-discord, .gradient-github, .gradient-x, .section, .section-social {
-        height: fit-content;
-    }
-}
 
