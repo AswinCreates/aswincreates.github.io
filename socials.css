@@ -18,7 +18,7 @@ body {
     background: #f3f4f6;
 }
 
-.gradient-insta {
+.gradient-insta, .gradient-discord, .gradient-github, .gradient-x {
     padding: 25px 50px;
     font-size: 16px;
     border: none;
@@ -26,13 +26,14 @@ body {
     background: transparent;
     color: white;
     cursor: pointer;
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease;
     box-shadow: 0 4px 8px transparent;
     position: relative;
     display: inline-block;
     outline: none;
 }
-.gradient-insta .instatip {
+
+.gradient-insta .instatip, .gradient-discord .discordtip, .gradient-github .gittip, .gradient-x .xtip {
     visibility: hidden;
     width: 140px;
     background-color: #555;
@@ -49,7 +50,7 @@ body {
     transition: opacity 0.3s;
 }
 
-.gradient-insta .instatip::after {
+.gradient-insta .instatip::after, .gradient-discord .discordtip::after, .gradient-github .gittip::after, .gradient-x .xtip::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -59,6 +60,7 @@ body {
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
+
 .gradient-insta:hover {
     background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
     transform: scale(1.2);
@@ -69,47 +71,6 @@ body {
     background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
 }
 
-.gradient-discord {
-    padding: 25px 50px;
-    font-size: 16px;
-    border: none;
-    border-radius: 25px;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3 ease;
-    box-shadow: 0 4px 8px transparent;
-    position: relative;
-    display: inline-block;
-    outline: none;
-}
-.gradient-discord .discordtip {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -70px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.gradient-discord .discordtip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
 .gradient-discord:hover {
     background: linear-gradient(135deg, #4f71e9, #ebebeb);
     transform: scale(1.2);
@@ -120,47 +81,6 @@ body {
     background: linear-gradient(135deg, #4f71e9, #ebebeb);
 }
 
-.gradient-github {
-    padding: 25px 50px;
-    font-size: 16px;
-    border: none;
-    border-radius: 25px;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3 ease;
-    box-shadow: 0 4px 8px transparent;
-    position: relative;
-    display: inline-block;
-    outline: none;
-}
-.gradient-github .gittip {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -70px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.gradient-github .gittip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
 .gradient-github:hover {
     background: linear-gradient(135deg, #24292e, #fafbfc);
     transform: scale(1.2);
@@ -171,48 +91,6 @@ body {
     background: linear-gradient(135deg, #24292e, #fafbfc);
 }
 
-
-.gradient-x {
-    padding: 25px 50px;
-    font-size: 16px;
-    border: none;
-    border-radius: 25px;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3 ease;
-    box-shadow: 0 4px 8px transparent;
-    position: relative;
-    display: inline-block;
-    outline: none;
-}
-.gradient-x .xtip {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -70px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.gradient-x .xtip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
 .gradient-x:hover {
     background: linear-gradient(135deg, #08a0e9, #E8F5FD);
     transform: scale(1.2);
@@ -222,9 +100,6 @@ body {
     opacity: 1;
     background: linear-gradient(135deg, #08a0e9, #E8F5FD);
 }
-
-
-
 
 .banner {
     max-width: 600px;
@@ -255,7 +130,7 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
 
 .nav-link {
     display: inline-block;
@@ -282,7 +157,7 @@ body {
 }
 
 .nav-link:hover::after {
- content: '➜';
+    content: '➜';
 }
 
 .section {
@@ -292,20 +167,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1600px;
+    font: center;
+    max-height: fit-content;
 }
 
-.section-home {
+.section-about {
     padding: 20px;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.section-about {
+.section-social {
     padding: 20px;
-    height: 90vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -367,7 +245,6 @@ footer button:hover {
     background: linear-gradient(120deg, #2575fc, #6a11cb);
 }
 
-
 .section {
     padding: 2em;
     text-align: center;
@@ -378,7 +255,6 @@ footer button:hover {
     opacity: 0;
     pointer-events: none;
 }
-
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -398,32 +274,24 @@ footer button:hover {
     background: #52ff80;
 }
 
-
-
 .line {
-    width: 5px; 
+    width: 5px;
     height: 90px;
     background-color: #333;
-    margin: 20px auto; 
+    margin: 20px auto;
     border-color: white;
     border-radius: 1px;
 }
 
-@media (max-width: 600px) {
-    .gradient-insta {
+@media (max-width: 1500px) {
+    .gradient-insta, .gradient-discord, .gradient-github, .gradient-x, .section, .section-social {
         padding: 10px 15px;
     }
+}
 
-    .gradient-discord {
-        padding: 10px 15px;
+@media (max-height: fitcon) {
+    .gradient-insta, .gradient-discord, .gradient-github, .gradient-x, .section, .section-social {
+        height: fit-content;
     }
-
-    .gradient-github {
-        padding: 10px 15px;
-    }
-
-    .gradient-x {
-        padding: 10px 15px;
-    }
-}    
+}
 
