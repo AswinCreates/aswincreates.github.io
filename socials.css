@@ -59,12 +59,11 @@ body, html {
 
 .section {
     padding: 20px;
-    height: 80vh;
+    height: 78vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1600px;
     font: center;
     max-height: fit-content;
     margin-top: 80px;
@@ -72,7 +71,7 @@ body, html {
 
 .section-about {
     padding: 20px;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +81,7 @@ body, html {
 
 .section-social {
     padding: 20px;
-    height: 70vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,10 +216,12 @@ footer {
 
     .section {
         padding: 10px;
+        height: fit-content;
     }
 
     .section-about, .section-social {
         padding: 10px;
+        height: fit-content;
     }
 
     footer button {
