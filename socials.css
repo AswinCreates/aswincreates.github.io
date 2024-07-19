@@ -154,6 +154,26 @@ body, html {
     opacity: 1;
 }
 
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #004e92;
+}
+
+::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #52ff80;
+}
+
+
 .audio-player {
     display: flex;
     align-items: left;
