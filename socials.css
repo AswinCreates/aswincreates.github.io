@@ -28,6 +28,7 @@ body, html {
 }
 
 
+
 .nav-link {
     color: white;
     text-decoration: none;
@@ -88,6 +89,7 @@ body, html {
     align-items: center;
     margin-top: 80px;
 }
+
 
 .banner {
     display: flex;
@@ -214,6 +216,8 @@ footer {
     color: white;
 }
 
+/* Media Quaries */
+
 @media (max-width: 600px) {
     .navbar {
         width: 95%;
@@ -246,5 +250,80 @@ footer {
 
     footer button {
         padding: 0.5em 1.5em;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .navbar {
+        width: 80%;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .gradient-insta, .gradient-discord, .gradient-github, .gradient-x {
+        padding: 15px 20px;
+    }
+
+    footer button {
+        padding: 0.5em 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        width: 60%;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .gradient-insta, .gradient-discord, .gradient-github, .gradient-x {
+        padding: 20px 25px;
+    }
+
+    footer button {
+        padding: 0.75em 2.5em;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .navbar {
+        width: 40%;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .gradient-insta, .gradient-discord, .gradient-github, .gradient-x {
+        padding: 20px 30px;
+    }
+
+    footer button {
+        padding: 1em 3em;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .navbar {
+        width: 30%;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .gradient-insta, .gradient-discord, .gradient-github, .gradient-x {
+        padding: 25px 35px;
+    }
+
+    footer button {
+        padding: 1.25em 3.5em;
     }
 }
