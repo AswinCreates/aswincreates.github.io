@@ -58,6 +58,7 @@ body, html {
 }
 
 
+
 .section {
     padding: 20px;
     height: 78vh;
@@ -90,6 +91,15 @@ body, html {
     margin-top: 80px;
 }
 
+.section-projects {
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
 
 .banner {
     display: flex;
@@ -157,13 +167,60 @@ body, html {
 }
 
 
+/* Projects Card */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    color: white;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
+
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #004e92;
+    background: linear-gradient(to top, #000428, #004e92);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -327,3 +384,5 @@ footer {
         padding: 1.25em 3.5em;
     }
 }
+
+
